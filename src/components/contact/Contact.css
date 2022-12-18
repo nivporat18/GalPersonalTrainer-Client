@@ -1,0 +1,239 @@
+.allPageContact{
+display: flex;
+flex-direction: column;
+justify-content: center;
+background: rgba(248, 247, 245, 0.412);
+margin: 30px;
+margin-left: 300px;
+margin-right: 300px;
+ position: relative;
+  animation-name: example;
+  animation-duration: 0.5s;
+
+}
+
+
+.fullName{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 10px; 
+}
+
+.fullName > input{
+    font-weight: bolder;
+    color: black;
+}
+
+
+
+.email{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.email > input{
+    font-weight: bolder;
+}
+
+
+
+.phoneNumber{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+
+.phoneNumber > input{
+    font-weight: bolder;
+}
+
+
+.inputText{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 10px; 
+}
+
+.inputText > input{
+    font-weight: bolder;
+}
+
+.inputText > textarea{
+    font-weight: bolder;
+    resize: none;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin: 10px; 
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+	.allPageContact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(248, 247, 245, 0.412);
+         position: relative;
+          animation-name: example;
+          animation-duration: 0.5s;
+          margin-left: 150px;
+          margin-right: 150px;
+        }
+        
+        
+        .fullName{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin: 10px; 
+        }
+        
+        .fullName > input{
+            font-weight: bolder;
+            color: black;
+        }
+        
+        
+        
+        .email{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin: 10px;
+        }
+        
+        .email > input{
+            font-weight: bolder;
+        }
+        
+        
+        
+        .phoneNumber{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin: 10px;
+        }
+        
+        
+        .phoneNumber > input{
+            font-weight: bolder;
+        }
+        
+        
+        .inputText{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin: 10px; 
+        }
+        
+        .inputText > input{
+            font-weight: bolder;
+        }
+        
+        .inputText > textarea{
+            font-weight: bolder;
+            resize: none;
+        }
+        
+        
+        .btn{
+            display: flex;
+            justify-content: center;
+            margin: 10px; 
+        }
+        
+}
+
+
+
+@media only screen and (max-width: 600px) {
+	.allPageContact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(248, 247, 245, 0.412);
+         position: relative;
+          animation-name: example;
+          animation-duration: 0.5s;
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+        
+        
+        .fullName{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin: 10px; 
+        }
+        
+        .fullName > input{
+            font-weight: bolder;
+            color: black;
+        }
+        
+        
+        
+        .email{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin: 10px;
+        }
+        
+        .email > input{
+            font-weight: bolder;
+        }
+        
+        
+        
+        .phoneNumber{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin: 10px;
+        }
+        
+        
+        .phoneNumber > input{
+            font-weight: bolder;
+        }
+        
+        
+        .inputText{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin: 10px; 
+        }
+        
+        .inputText > input{
+            font-weight: bolder;
+        }
+        
+        .inputText > textarea{
+            font-weight: bolder;
+            resize: none;
+        }
+        
+        
+        .btn{
+            display: flex;
+            justify-content: center;
+            margin: 10px; 
+        }
+        
+}
