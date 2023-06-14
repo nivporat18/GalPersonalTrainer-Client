@@ -62,7 +62,7 @@ const handelSend = async (e)=>{
           <Card ><h1 className='title-training'> Let's Talk</h1></Card>
 
     <div className="flex justify-center overflow-hidden  bg-cover bg-top bg-no-repeat ">
-    <div className="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-4 mt-16">
+    <div className="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-4 mt-24">
     <div  className="container px-6 md:px-12">
         <div class="mb-12 grid gap-x-6 md:grid-cols-2 lg:grid-cols-4">
           <div class="mx-auto mb-12 text-center lg:mb-0">
@@ -134,50 +134,3 @@ const handelSend = async (e)=>{
 
 export default Contact
 
-
-
-
-  
-  //   <div >
-  // <Card ><h1 className='title-training'> Let's Talk</h1></Card>
-
-  //   <div className="allPageContact">
-
-
-  //   <form ref={from} onSubmit={handelSend}  >
-
-  //     <div >
-
-  //       <div className="fullName">
-
-  //     <input onInput={handleFullName} id="FullName" name="FullName"  placeholder="Full Name"  value={FullName} type="text" required />
-  //     </div>
-     
-  //     <div className="email">
-     
-  //     <input onInput={handleEmail} id="email" name="email"  placeholder="Email" value={email} type="email" required/>
-  //     </div>
-
-
-  //     <div className="phoneNumber">
-    
-  //     <input onChange={handlePhoneNumber} id="phoneNumber" name="phoneNumber" value={phoneNumber} placeholder="Phone Number" type="tel" required/>
-  //     </div>
-
-
-  //     <div className="inputText">
-  //     <textarea onChange={handleTextInput} id="message" name="message" placeholder="Message" value={message} type="text" rows="10" maxLength="100" required/>
-  //     </div>
-
-  //   <div className="btn">
-  //     <Button type="submit"   variant="contained">SEND</Button>
-  //   </div>
-    
-
-
-  //     </div>
-  
-
-  //     </form>
-  //     </div>
-  //   </div>

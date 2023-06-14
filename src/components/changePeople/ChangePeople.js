@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './ChangePeople.css'
-import { Card } from "@mui/material";
 import ReactLoading from 'react-loading'
 
 
@@ -35,37 +34,27 @@ function ChangePeople() {
 
 
   return (
-    <div > 
-<Card ><h2 className='title-training'> Before & After</h2></Card>
 
-<div className="allPage"> 
+    <div class="flex flex-wrap justify-center mt-20">
 
 {
-        !done ? <ReactLoading type={"bars"} color={"black"} height={100} width={100}/>
+        !done ? <ReactLoading className='mt-20' type={"bars"} color={"black"} height={100} width={100}/>
     :
 
 
-changePeople && changePeople.map((c)=>
-   <div key={c._id} className="allChange">
-<div key={c.id} className="changePeople">
-
-  <div className='img1'>
-    <img src={c.imgBefore} alt={c.description} width="400px"/>
+      changePeople && changePeople.map((c)=>
+      <div class="relative flex justify-center items-center w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md m-5">
+      <div class="relative    overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg ">
+        <img src={c.imgBefore} alt={c.description}/>
+      </div>
     </div>
 
-
-</div>
-</div>
 
       )}
 
 
+    </div>
 
-
-
-   
-</div>
-</div>
   )
 }
 

@@ -5,7 +5,7 @@ import gal from "../images/gal.jpg"
 const Home = () => {
   return (
 
-<section className="flex justify-center overflow-hidden  bg-cover bg-top bg-no-repeat">
+<section className="flex justify-center overflow-hidden  bg-cover bg-top bg-no-repeat my-16">
   <div className="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-4">
     <div className="text-center ltr:sm:text-left rtl:sm:text-right">
       <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">Gal Porat Personal Trainer </h2>
