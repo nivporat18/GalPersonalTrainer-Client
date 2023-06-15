@@ -15,81 +15,120 @@ const NavBar = () => {
   }
 
   return (
-    <header className="bg-white fixed w-full z-20 top-0 left-0">
-  <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-    <div className="flex h-auto items-center justify-between">
-      <div className="md:flex md:items-center md:gap-12">
-        <img src={logo} alt="Logo" className="block text-teal-600 w-[73px]"/>
-      </div>
+<nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+ 
+  
 
-      <div class="hidden md:block">
-        <nav aria-label="Global">
-          <ul class="flex items-center gap-6 text-sm">
-            <li>
-            <Link   className="text-gray-500 transition hover:text-gray-500/75" to="/home">About</Link>
-            </li>
+ <div className='flex'>
 
-            <li>
-            <Link className="text-gray-500 transition hover:text-gray-500/75" to="/training">Training</Link>
-            </li>
+ <div>
+ <img src={logo} alt="Logo" className="block text-teal-600 w-[73px]"/>
+ </div>
+ 
 
-            <li>
-            <Link    className="text-gray-500 transition hover:text-gray-500/75" to="/before&after">Before & After</Link>
-            </li>
 
-            <li>
-            <Link className="text-gray-500 transition hover:text-gray-500/75" to="/contact">Let's Talk</Link>
-            </li>
 
-          </ul>
-        </nav>
-      </div>
 
-      <div className="flex items-center gap-4">
 
-        <div className="block md:hidden" onClick={toggleNav}>
-          {isOpen ?   <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"><img src={close} alt="close"/></button>    : 
-           <button
-            className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75" >
+   
+
+<div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto ">
+
+
+
+
+
+   
+ 
+ <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+   
+ <ul className=" flex md:p-0 items-center font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
+  
+
+             <li>
+             <Link className="block m-3 py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" to="/home">אודות</Link>
+             </li>
+
+             <li>
+             <Link className="block m-3 py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" to="/training">אימונים</Link>
+             </li>
+
+             <li>
+             <Link className="block m-3 py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" to="/before&after">לפני & אחרי</Link>
+             </li>
+
+             <li>
+             <Link  className="block m-3 py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" to="/contact">יצירת קשר</Link>
+             </li>
+  
+  
+ </ul>
+ 
+
+
+
+ </div>
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* {Mobile} */}
+<div className="flex md:order-2 md:hidden" onClick={toggleNav}>
+
+{isOpen ? <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"><img src={close} alt="close"/></button> :  
+         <button
+            className="rounded  p-2 text-gray-600 transition hover:text-gray-600/75" >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
-          </button> }
-        </div>  
-      </div>
-
-        {isOpen && (
-            <div className="items-center justify-between  w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-
-               <div class="md:block">
-               <nav aria-label="Global">
-                 <ul className=" flex flex-col md:p-0 items-center font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800  dark:border-gray-700 ">
-                   <li>
-                   <Link   className="text-gray-500 transition hover:text-gray-500/75" to="/home">About</Link>
-                   </li>
-       
-                   <li>
-                   <Link className="text-gray-500 transition hover:text-gray-500/75" to="/training">Training</Link>
-                   </li>
-       
-                   <li>
-                   <Link    className="text-gray-500 transition hover:text-gray-500/75" to="/before&after">Before & After</Link>
-                   </li>
-       
-                   <li>
-                   <Link className="text-gray-500 transition hover:text-gray-500/75" to="/contact">Let's Talk</Link>
-                   </li>
-       
-                 </ul>
-               </nav>
-             </div>
-
-             </div>
-        )}
+          </button> }  
+</div>
+</div>
+ {isOpen && (
 
 
-    </div>
-  </div>
-</header>
+<div className="items-center justify-between  w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+
+
+
+
+<ul className=" flex flex-col md:p-0 items-center font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
+
+              <li>
+             <Link className="block m-3 py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" to="/home">אודות</Link>
+             </li>
+
+             <li>
+             <Link className="block m-3 py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" to="/training">אימונים</Link>
+             </li>
+
+             <li>
+             <Link className="block m-3 py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" to="/before&after">לפני & אחרי</Link>
+             </li>
+
+             <li>
+             <Link  className="block m-3 py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" to="/contact">יצירת קשר</Link>
+             </li>
+  
+ 
+</ul>
+
+</div>
+
+
+)}
+
+</nav>
 
   )
 }
@@ -99,5 +138,79 @@ export default NavBar
 
    
   
-    
+// <header className="bg-white fixed w-full z-20 top-0 left-0">
+// //   <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+// //     <div className="flex h-auto items-center justify-between">
+// //       <div className="md:flex md:items-center md:gap-12">
+// //         <img src={logo} alt="Logo" className="block text-teal-600 w-[73px]"/>
+// //       </div>
+
+// //       <div class="hidden md:block">
+// //         <nav aria-label="Global">
+// //           <ul class="flex items-center gap-6 text-sm">
+// //             <li>
+// //             <Link   className="text-gray-500 transition hover:text-gray-500/75" to="/home">אודות</Link>
+// //             </li>
+
+// //             <li>
+// //             <Link className="text-gray-500 transition hover:text-gray-500/75" to="/training">אימונים</Link>
+// //             </li>
+
+// //             <li>
+// //             <Link    className="text-gray-500 transition hover:text-gray-500/75" to="/before&after">לפני & אחרי</Link>
+// //             </li>
+
+// //             <li>
+// //             <Link className="text-gray-500 transition hover:text-gray-500/75" to="/contact">יצירת קשר</Link>
+// //             </li>
+
+// //           </ul>
+// //         </nav>
+// //       </div>
+
+// //       <div className="flex items-center gap-4">
+
+// //         <div className="block md:hidden" onClick={toggleNav}>
+// //           {isOpen ?   <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"><img src={close} alt="close"/></button>    : 
+//            <button
+//             className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75" >
+//             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+//               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+//           </button> }
+//         </div>  
+//       </div>
+
+//         {isOpen && (
+//             <div className="items-center justify-between  w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+
+//                <div class="md:block">
+//                <nav aria-label="Global">
+//                  <ul className=" flex flex-col md:p-0 items-center font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800  dark:border-gray-700 ">
+//                    <li>
+//                    <Link   className="text-gray-500 transition hover:text-gray-500/75" to="/home">About</Link>
+//                    </li>
+       
+//                    <li>
+//                    <Link className="text-gray-500 transition hover:text-gray-500/75" to="/training">Training</Link>
+//                    </li>
+       
+//                    <li>
+//                    <Link    className="text-gray-500 transition hover:text-gray-500/75" to="/before&after">Before & After</Link>
+//                    </li>
+       
+//                    <li>
+//                    <Link className="text-gray-500 transition hover:text-gray-500/75" to="/contact">Let's Talk</Link>
+//                    </li>
+       
+//                  </ul>
+//                </nav>
+//              </div>
+
+//              </div>
+//         )}
+
+
+//     </div>
+//   </div>
+// </header>
     

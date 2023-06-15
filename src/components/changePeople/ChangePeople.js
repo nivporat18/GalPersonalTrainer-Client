@@ -35,22 +35,28 @@ function ChangePeople() {
 
   return (
 
-    <div class="flex flex-wrap justify-center mt-20">
+    <div className="flex justify-center mt-20 container mx-auto px-8">
+    <div className='grid lg:grid-cols-3 gap-6 md:grid-cols-2 '>
+
 
 {
-        !done ? <ReactLoading className='mt-20' type={"bars"} color={"black"} height={100} width={100}/>
+        !done ? <ReactLoading className=' mt-20' type={"bars"} color={"black"} height={100} width={100}/>
     :
 
 
+   
       changePeople && changePeople.map((c)=>
-      <div class="relative flex justify-center items-center w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md m-5">
-      <div class="relative    overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg ">
-        <img src={c.imgBefore} alt={c.description}/>
+      
+      <div className=" shadow-lg rounded-lg">
+        <img className=' round-t-lg' src={c.imgBefore} alt={c.description}/>
+        <h3>{c.description}</h3>
       </div>
-    </div>
+   
 
 
       )}
+        </div>
+
 
 
     </div>

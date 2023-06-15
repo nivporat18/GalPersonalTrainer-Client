@@ -33,28 +33,32 @@ const Training = () => {
 
   return (
 
-    <div class="flex flex-wrap justify-center mt-20">
+<div class="flex flex-wrap justify-center mt-20 ">
+
       
- {!done ? <ReactLoading className='mt-20' type={"bars"} color={"black"} height={100} width={100}/>
+ {!done ? <ReactLoading className='mt-20 ' type={"bars"} color={"black"} height={100} width={100}/>
  :
   training && training.map((t)=>
-  <div class="flex justify-center ">
-  <div class="rounded-lg shadow-lg bg-white max-w-sm m-5">
+  <div className="rounded-lg shadow-lg bg-white max-w-sm m-5">
+
+  <a href="#!">
+  <video width="320" height="240" controls className="w-full rounded-t-lg">
+      <source src={t.video} type="video/mp4"/>
+      <source src="movie.ogg" type="video/ogg"/>
+      Your browser does not support the video tag.
+  </video>
+</a>
+
  
-          <video  controls className="w-full h-auto rounded-t-lg">
-              <source src={t.video} type="video/mp4"/>
-              <source src="movie.ogg" type="video/ogg"/>
-          </video>
-     
-      <div class="p-6">
-          <h5 class="text-gray-900 text-xl font-medium mb-2">{t.description}</h5>
-       </div>
-  </div>
- </div>
+  <p className="text-gray-700 text-base mb-4 flex justify-center">
+        {t.description}
+  </p>
+
+</div>
   )  
  }
-
-    </div>
+</div>
+    
   );
 };
 
