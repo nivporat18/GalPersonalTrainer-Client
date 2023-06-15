@@ -22,7 +22,7 @@ const NavBar = () => {
  <div className='flex'>
 
  <div>
- <img src={logo} alt="Logo" className="block text-teal-600 w-[73px]"/>
+ {/* <img src={logo} alt="Logo" className="block text-teal-600 w-[73px]"/> */}
  </div>
  
 
