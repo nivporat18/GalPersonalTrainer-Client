@@ -6,8 +6,8 @@ import logo from "../images/logoremovebgpreview.png"
 const Home = () => {
   return (
 
-<section className="flex justify-center overflow-hidden bg-[url(https://res.cloudinary.com/mepelaozen/image/upload/v1686810065/GalWeb/gym_background_t0tg5v.jpg)] min-h-screen bg-cover bg-no-repeat bg-fixed bg-center">
-  <div className="bg-black/25 md:p-12 lg:px-16 lg:py-4 fixed">
+<section className="flex justify-center overflow-hidden bg-[url(https://res.cloudinary.com/mepelaozen/image/upload/v1686810065/GalWeb/gym_background_t0tg5v.jpg)]  bg-cover bg-no-repeat bg-fixed h-screen bg-center">
+  <div className="bg-black/25 md:p-12 lg:px-16 lg:py-4 ">
     <div className="text-center ltr:sm:text-left rtl:sm:text-right ">
       <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl flex justify-center"><img src={logo} alt="לוגו" className="w-[200px]"/></h2>
 

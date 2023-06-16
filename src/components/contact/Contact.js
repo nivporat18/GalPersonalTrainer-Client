@@ -63,7 +63,7 @@ const handelSend = async (e)=>{
     <div>
           <Card ><h1 className='title-training'> Let's Talk</h1></Card>
 
-    <div className="flex justify-center  overflow-hidden  bg-[url(https://res.cloudinary.com/mepelaozen/image/upload/v1686810065/GalWeb/gym_background_t0tg5v.jpg)] bg-cover  bg-no-repeat">
+    <div className="flex justify-center  overflow-hidden image-background   bg-cover  bg-no-repeat">
     <div className="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-4 mt-16">
       
     <div  className="container px-8 md:px-12 ">

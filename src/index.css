@@ -2,4 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.body{
+    background-image: url('https://res.cloudinary.com/mepelaozen/image/upload/v1686810065/GalWeb/gym_background_t0tg5v.jpg');
+}
+
+
+
 
