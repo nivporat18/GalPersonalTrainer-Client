@@ -36,7 +36,7 @@ function ChangePeople() {
   return (
 
     <div className="flex justify-center mt-20 container mx-auto px-8">
-    <div className='grid lg:grid-cols-3 gap-6 md:grid-cols-2 '>
+    <div className='grid  lg:grid-cols-3 gap-6 md:grid-cols-2 '>
 
 
 {
