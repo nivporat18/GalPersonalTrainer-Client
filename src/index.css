@@ -2,5 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: url('https://res.cloudinary.com/mepelaozen/image/upload/v1686810065/GalWeb/gym_background_t0tg5v.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 
 
