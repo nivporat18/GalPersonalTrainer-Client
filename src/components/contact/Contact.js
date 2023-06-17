@@ -63,11 +63,11 @@ const handelSend = async (e)=>{
     <div>
           <Card ><h1 className='title-training'> Let's Talk</h1></Card>
 
-    <div className="flex justify-center  overflow-hidden h-screen">
+    <div className="flex justify-center  overflow-hidden">
     <div className="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-4 mt-7">
       
     <div  className="container px-8 md:px-12 ">
-        <div class="mb-5 grid gap-x-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class=" grid gap-x-8 md:grid-cols-2 lg:grid-cols-3">
           
           <div class="mx-auto mb-12 text-center lg:mb-0">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
